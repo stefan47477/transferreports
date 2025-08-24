@@ -1,0 +1,26 @@
+# Node / Angular
+node_modules/
+dist/
+.angular/
+coverage/
+*.log
+
+# .NET / Visual Studio
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Env / secrets
+.env
+.env.*
+secrets.json
+*.local.json

@@ -1,0 +1,38 @@
+.card {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 16px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #e6e9ef;
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.03);
+}
+
+.avatar {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  background: #f2f5f9;
+  display: grid; place-items: center;
+  font-weight: 700; font-size: 20px; color: #3a4757;
+  border: 1px solid #e6e9ef;
+}
+
+.top {
+  display: flex; align-items: baseline; justify-content: space-between;
+}
+.player { margin: 0; font-size: 20px; }
+.right { display: flex; gap: 16px; align-items: baseline; }
+.fee { font-weight: 700; }
+.time { color: #7a8391; font-size: 12px; }
+
+.move {
+  margin: 6px 0 8px;
+  .club { font-weight: 600; }
+  .arrow { margin: 0 6px; color: #7a8391; }
+}
+
+.bottom {
+  display: flex; align-items: center; gap: 12px;
+  .note { color: #5a6472; font-style: italic; }
+}

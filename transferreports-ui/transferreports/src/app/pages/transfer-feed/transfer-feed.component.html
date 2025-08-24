@@ -1,0 +1,15 @@
+<section class="page">
+  <header class="hero">
+    <h2>TransferWire</h2>
+    <p>Live football transfer rumors</p>
+  </header>
+
+  <div class="feed">
+    <ng-container *ngIf="rumors$ | async as rumors">
+      <app-transfer-card
+        *ngFor="let r of rumors; trackBy: trackById"
+        [rumor]="r">
+      </app-transfer-card>
+    </ng-container>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+* text=auto eol=lf
+*.sln text eol=crlf
+*.cs  text diff=csharp
+*.ts  text
+*.scss text
+*.css text
+*.html text
+*.json text
+*.yml text
+*.yaml text
+*.md text

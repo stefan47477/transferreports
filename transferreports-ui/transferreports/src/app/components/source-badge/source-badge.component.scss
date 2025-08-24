@@ -1,0 +1,13 @@
+.badge {
+  display: inline-block;
+  padding: .25rem .5rem;
+  border-radius: .5rem;
+  font-size: .75rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+
+  &.tier1 { background: #219653; }  // green
+  &.tier2 { background: #f2c94c; color: #111; } // yellow
+  &.gossip { background: #ea5455; } // red
+}

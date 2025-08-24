@@ -1,0 +1,28 @@
+<article class="card">
+  <div class="avatar">{{ rumor.player[0] }}</div>
+
+  <div class="main">
+    <header class="top">
+      <h3 class="player">{{ rumor.player }}</h3>
+      <div class="right">
+        <div class="fee" *ngIf="rumor.fee as fee">{{ fee }}</div>
+        <div class="time">{{ rumor.timestamp | timeAgo }}</div>
+      </div>
+    </header>
+
+    <div class="move">
+      <span class="club from">{{ rumor.fromClub }}</span>
+      <span class="arrow">→</span>
+      <span class="club to">{{ rumor.toClub }}</span>
+    </div>
+
+    <footer class="bottom">
+      <app-source-badge
+        [label]="rumor.source"
+        [credibility]="rumor.credibility"
+        [url]="rumor.sourceUrl">
+      </app-source-badge>
+      <span class="note" *ngIf="rumor.note">“{{ rumor.note }}”</span>
+    </footer>
+  </div>
+</article>
