@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 using TransferReports.Api.Data;
-using TransferWire.Api.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
